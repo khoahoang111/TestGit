@@ -135,6 +135,14 @@ public class HomeController {
 	}
 
 	
+
+	@RequestMapping(value = "/search" , method = RequestMethod.POST)
+	public String  searchhoVa Ten(ModelMap model,
+			@RequestParam("tenKH") String tenKH){
+
+		model.addAttribute("form2", form2Service.search(tenKH));
+		return "home";
+	}
 	
 	
 	
