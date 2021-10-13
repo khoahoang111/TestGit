@@ -133,6 +133,14 @@ public class HomeController {
 		model.addAttribute("form2", form2Service.search(tenKH));
 		return "home";
 	}
+
+	@RequestMapping(value = "/search" , method = RequestMethod.POST)
+	public String  search1(ModelMap model,
+			@RequestParam("tenKH") String tenKH){
+
+		model.addAttribute("form2", form2Service.search(tenKH));
+		return "home";
+	}
 	
 	
 	
