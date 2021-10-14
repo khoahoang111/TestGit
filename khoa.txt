@@ -1,2 +1,4 @@
-khoa
-hoang
+public void getAll(){
+	model.addtibute("khoa",accountService.getAll());
+
+}
